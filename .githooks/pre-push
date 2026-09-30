@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Bloqueia push quebrado (substitui o GitHub Actions). Emergencia: git push --no-verify
+PULAR_LENTO=1 exec "$(git rev-parse --show-toplevel)/scripts/verificar.sh"
